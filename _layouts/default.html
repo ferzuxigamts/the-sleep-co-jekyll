@@ -4,22 +4,24 @@
 <head>
     
     
-    <title>My jekyll Website</title>
+    <title>{{page.title}}</title>
+
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
     
     <link rel="stylesheet"  href="/style.css" />
     
 </head>
 
 <body>
-   <header> 
-    This is a header
-   </header>
+    <header> 
+       <h2> You are currently on the {{page.title}} </h2>
+    </header>
    
-   {{ content }}
+    {{content}}
 
-   <footer>
+    <footer>
     This is our footer
-   </footer>
+    </footer>
 </body>
 
 </html>
